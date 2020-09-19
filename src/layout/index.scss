@@ -5,15 +5,73 @@
 
   &__header {
     flex: 0 0 auto;
-    padding: 15px 50px;
     background: linear-gradient(75deg, #6b4192 0%, #e03d7f 42%, #f09c7f 100%);
     color: #fff;
     box-shadow: 0 0 12px rgba(0, 0, 0, .18);
+  }
+
+  &__title {
+    margin: 30px 50px;
   }
 
   &__main {
     flex: 1;
     display: flex;
     overflow-y: auto;
+  }
+}
+
+.Navbar {
+  background-color: rgba(255, 255, 255, 0.14);
+  flex-direction: row;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+
+  &__list {
+    list-style: none;
+    display: flex;
+    margin: 0px !important;
+  }
+
+  &__li {
+    margin: 0px 6px;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 12px 0px;
+    margin: 5px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+
+    &::before {
+      transition: 300ms;
+      height: 5px;
+      content: "";
+      position: absolute;
+      background-color: white;
+      width: 0%;
+      bottom: 5px;
+    }
+
+    &:hover::before{
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &__active {
+      opacity: 1;
+    }
+
+    &__active::before {
+      width: 100%;
+    }
   }
 }

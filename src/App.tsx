@@ -1,11 +1,8 @@
 import React from 'react';
-import Layout from './layout';
-import Home from './pages/Home';
+import Routing from 'router';
 
 const App = (): JSX.Element => (
-  <Layout>
-    <Home />
-  </Layout>
+  <Routing />
 );
 
 export default App;

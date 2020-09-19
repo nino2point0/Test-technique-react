@@ -1,0 +1,17 @@
+.Todos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Card {
+  border: 1px solid rgba($color: #262052, $alpha: 0.05);
+  &__expanded {
+    margin-left: 12px;
+  }
+}
+
+.close-btn {
+  margin: 6px 0px 24px 0px;
+  align-self: flex-end;
+}

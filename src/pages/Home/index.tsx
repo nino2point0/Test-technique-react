@@ -65,7 +65,7 @@ const Home = () => (
       Bien sûr, libre à vous d&apos;introduire n&apos;importe quelle librairie qui vous
       semblerait utile.
     </p>
-    <p>Merci pour votre temps, bonne chance&nbsp;!</p>
+    <p className='margin-bottom'>Merci pour votre temps, bonne chance&nbsp;!</p>
   </Page>
 );
 
